@@ -115,6 +115,9 @@
 		63797ADF29B7D8059850B539CD51B729 /* Pods-DCHFyberSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C008FBF63CB1CCD1434CE6EE3C722C59 /* Pods-DCHFyberSDK_Example-dummy.m */; };
 		64A8D5226A68D50DE44EC4D9D84DECE7 /* KWAsyncVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500C6B9AA584DB501E4E81DBF4107AC /* KWAsyncVerifier.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		659253A82D731376D4E85625C220798E /* KWBeforeEachNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E31B3405CBDDF3166D8B4AB03F4924A5 /* KWBeforeEachNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B6ACED1BC1953200D0E1D6 /* FBROfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6ACEC1BC1953200D0E1D6 /* FBROfferItem.m */; };
+		65B6ACF01BC1954B00D0E1D6 /* FBOffersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6ACEF1BC1954B00D0E1D6 /* FBOffersRequest.m */; };
+		65B6ACF31BC1960A00D0E1D6 /* FBRFyber.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6ACF21BC1960A00D0E1D6 /* FBRFyber.m */; };
 		660954C301780A1DB84E30C9F5585093 /* NSObject+KiwiSpyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 868C5B6A3B6BD0AC8C217AC3BFE91703 /* NSObject+KiwiSpyAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6650AEC483520C5DAD46F5ABC049D521 /* KWPendingNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D349221AC0463FBA3A44A173C9CBC5F /* KWPendingNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69843A5B880D9C73E3188C3DE027A487 /* KWObjCUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD8B2FC3421CCCA6AB6BA988613A405 /* KWObjCUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -437,6 +440,12 @@
 		63CCF08B0AC142F57F1C6C1D25A8C52F /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		650CCD3D41F6D940E12978D14B1AC2E8 /* KWStringPrefixMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWStringPrefixMatcher.h; path = Classes/Matchers/KWStringPrefixMatcher.h; sourceTree = "<group>"; };
 		6545E80182FF40C2F8252E4D3C2DC387 /* Pods-DCHFyberSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DCHFyberSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		65B6ACEB1BC1953200D0E1D6 /* FBROfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROfferItem.h; sourceTree = "<group>"; };
+		65B6ACEC1BC1953200D0E1D6 /* FBROfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROfferItem.m; sourceTree = "<group>"; };
+		65B6ACEE1BC1954B00D0E1D6 /* FBOffersRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBOffersRequest.h; sourceTree = "<group>"; };
+		65B6ACEF1BC1954B00D0E1D6 /* FBOffersRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBOffersRequest.m; sourceTree = "<group>"; };
+		65B6ACF11BC1960A00D0E1D6 /* FBRFyber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRFyber.h; sourceTree = "<group>"; };
+		65B6ACF21BC1960A00D0E1D6 /* FBRFyber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRFyber.m; sourceTree = "<group>"; };
 		65DAD24C8CDE745F89A99ADB54ADD153 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		66DA098FBDA49D3369B02A096F538568 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		6705A21C76E0B8A589535FB6F89A389B /* KWMessageTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMessageTracker.m; path = Classes/Core/KWMessageTracker.m; sourceTree = "<group>"; };
@@ -913,6 +922,12 @@
 		5AD85CDF3A666DB867DB10FFCC4D6276 /* DCHFyberSDK */ = {
 			isa = PBXGroup;
 			children = (
+				65B6ACEB1BC1953200D0E1D6 /* FBROfferItem.h */,
+				65B6ACEC1BC1953200D0E1D6 /* FBROfferItem.m */,
+				65B6ACEE1BC1954B00D0E1D6 /* FBOffersRequest.h */,
+				65B6ACEF1BC1954B00D0E1D6 /* FBOffersRequest.m */,
+				65B6ACF11BC1960A00D0E1D6 /* FBRFyber.h */,
+				65B6ACF21BC1960A00D0E1D6 /* FBRFyber.m */,
 			);
 			name = DCHFyberSDK;
 			path = ../..;
@@ -1466,6 +1481,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B6ACF31BC1960A00D0E1D6 /* FBRFyber.m in Sources */,
+				65B6ACF01BC1954B00D0E1D6 /* FBOffersRequest.m in Sources */,
+				65B6ACED1BC1953200D0E1D6 /* FBROfferItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
