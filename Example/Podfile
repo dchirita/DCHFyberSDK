@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DCHFyberSDK_Example', :exclusive => true do
+  pod "DCHFyberSDK", :path => "../"
+end
+
+target 'DCHFyberSDK_Tests', :exclusive => true do
+  pod "DCHFyberSDK", :path => "../"
+
+  pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+end
