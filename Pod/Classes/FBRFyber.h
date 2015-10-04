@@ -29,6 +29,6 @@
  }
  </pre>
  */
-+ (instancetype)withToken:(NSString *)apiToken;
++ (instancetype)withAPIKey:(NSString *)apiToken;
 
 @end
