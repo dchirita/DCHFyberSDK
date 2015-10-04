@@ -40,21 +40,17 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
                  failure:(FBRFailure)failure{
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
+    
     NSString *format = self.params[kFBRFyberOfferParameterFormat];
+    
+#if defined(DEBUG)
     NSString *appId = self.params[kFBRFyberOfferParameterAppId];
     NSString *uID = self.params[kFBRFyberOfferParameterUID];
     NSString *locale = self.params[kFBRFyberOfferParameterLocale];
     NSString *oSVersion = self.params[kFBRFyberOfferParameterOSVersion];
     NSString *timestamp = self.params[kFBRFyberOfferParameterTimestamp];
-    NSString *hashkey = self.params[kFBRFyberOfferParameterHashkey];
     NSString *appleIdfa = self.params[kFBRFyberOfferParameterAppleIdfa];
     NSString *appleIdfaTrackingEnabled = self.params[kFBRFyberOfferParameterAppleIdfaTrackingEnabled];
-    NSString *iP = self.params[kFBRFyberOfferParameterIP];
-    NSString *pub0 = self.params[kFBRFyberOfferParameterPub0];
-    NSString *page = self.params[kFBRFyberOfferParameterPage];
-    NSString *offerTypes = self.params[kFBRFyberOfferParameterOfferTypes];
-    NSString *pSTime = self.params[kFBRFyberOfferParameterPsTime];
-    NSString *device = self.params[kFBRFyberOfferParameterDevice];
     
     NSAssert([format isEqualToString:@"xml"] ||
              [format isEqualToString:@"json"], @"We only support JSON or XML formars");
@@ -63,23 +59,31 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     NSAssert(locale, @"No locale provided");
     NSAssert(oSVersion, @"No oSVersion provided");
     NSAssert(timestamp, @"No timestamp provided");
-    NSAssert(hashkey, @"No hashkey provided");
     NSAssert(appleIdfa, @"No appleIdfa provided");
     NSAssert(appleIdfaTrackingEnabled, @"No appleIdfaTrackingEnabled provided");
+#endif
     
-    NSString *urlParams = [NSString stringWithFormat:
-                        @"offers.%@&"
-                        @"appid=%@&"
-                        @"uid=%@&"
-                        @"locale=%@&"
-                        @"os_version=%@&"
-                        @"timestamp=%@&"
-                        @"apple_idfa=%@&"
-                        @"apple_idfa_tracking_enabled=%@&"
-                        @"offer_types=%@",
-                        format, appId, uID, locale,
-                        oSVersion, timestamp,
-                        appleIdfa, appleIdfaTrackingEnabled, offerTypes];
+    NSString *urlParams = [NSString stringWithFormat:@"offers.%@&", format];
+    
+    NSMutableDictionary *paramsCopy = [[NSMutableDictionary alloc] initWithDictionary:self.params];
+    
+    [paramsCopy removeObjectForKey:kFBRFyberOfferParameterFormat];
+    
+    NSUInteger paramsCount = [paramsCopy count];
+    
+    NSArray *paramsKeys = [paramsCopy allKeys];
+    
+    for (NSInteger index = 0; index < paramsCount; index++){
+        NSString *paramKey = paramsKeys[index];
+        
+        NSString *thePairToAdd = [NSString stringWithFormat:@"%@=%@", paramKey, paramsCopy[paramKey]];
+        
+        urlParams = [urlParams stringByAppendingString:thePairToAdd];
+        
+        if (index != paramsCount - 2){
+            urlParams = [urlParams stringByAppendingString:@"&"];
+        }
+    }
     
     NSString *hashKey = [self hashFromParams:self.params];
     
