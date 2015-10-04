@@ -40,7 +40,6 @@
                              kFBRFyberOfferParameterLocale : @"DE",
                              kFBRFyberOfferParameterOSVersion : deviceVersion,
                              kFBRFyberOfferParameterTimestamp : currentTS,
-                             kFBRFyberOfferParameterHashkey : @"eff26c67f527e6817bf6935c75f8cc5cc5cffac2",
                              kFBRFyberOfferParameterAppleIdfa : appleIDFA,
                              kFBRFyberOfferParameterAppleIdfaTrackingEnabled : isAdvertisingTrackingEnabled ? @"true" : false,
                              kFBRFyberOfferParameterOfferTypes : @"112",
