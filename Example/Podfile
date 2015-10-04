@@ -10,4 +10,5 @@ target 'DCHFyberSDK_Tests', :exclusive => true do
 
   pod 'Kiwi'
   pod 'FBSnapshotTestCase'
+  pod 'AFNetworking', '~> 2.6'
 end
