@@ -1,0 +1,6 @@
+framework module DCHFyberSDK {
+  umbrella header "Pods-DCHFyberSDK_Tests-DCHFyberSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

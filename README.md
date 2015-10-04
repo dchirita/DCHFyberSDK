@@ -22,7 +22,7 @@ pod "DCHFyberSDK"
 
 ## Author
 
-Daniel, rzd_man@yahoo.com
+Daniel, dv.chirita@gmail.com
 
 ## License
 

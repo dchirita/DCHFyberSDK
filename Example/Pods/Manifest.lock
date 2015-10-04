@@ -1,0 +1,24 @@
+PODS:
+  - DCHFyberSDK (0.1.0)
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
+  - Kiwi (2.4.0)
+
+DEPENDENCIES:
+  - DCHFyberSDK (from `../`)
+  - FBSnapshotTestCase
+  - Kiwi
+
+EXTERNAL SOURCES:
+  DCHFyberSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DCHFyberSDK: 4d8288b53dd4f9dba63afa1cc37a3e4b9f2f673d
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+
+COCOAPODS: 0.37.1
