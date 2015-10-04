@@ -10,7 +10,7 @@
 
 @interface FBRFyber()
 
-@property (nonatomic, copy) NSString *apiToken;
+@property (nonatomic, copy) NSString *apiKey;
 
 @end
 
@@ -18,21 +18,21 @@
 
 static FBRFyber *sharedInstance = nil;
 
-- (instancetype)initWithToken:(NSString *)apiToken{
+- (instancetype)initWithToken:(NSString *)apiKey{
     
     self = [super init];
     
     if (self){
-        _apiToken = [apiToken copy];
+        _apiKey = [apiKey copy];
     }
     
     return self;
 }
 
-+ (instancetype)withToken:(NSString *)apiToken{
++ (instancetype)withAPIKey:(NSString *)apiKey{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [[self alloc] initWithToken:apiToken];
+        sharedInstance = [[self alloc] initWithToken:apiKey];
     });
     return sharedInstance;
 }

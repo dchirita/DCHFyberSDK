@@ -8,11 +8,17 @@
 
 #import "FBRAppDelegate.h"
 
+#import <FBRFyber.h>
+
+NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
+
 @implementation FBRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    [FBRFyber withToken:@"API_KEY"];
+    
     return YES;
 }
 

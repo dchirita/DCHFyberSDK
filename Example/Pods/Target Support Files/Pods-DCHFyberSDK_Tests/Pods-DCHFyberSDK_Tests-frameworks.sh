@@ -53,11 +53,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-DCHFyberSDK_Tests/AFNetworking.framework'
+  install_framework 'Pods-DCHFyberSDK_Tests/DCHFyberSDK.framework'
   install_framework 'Pods-DCHFyberSDK_Tests/FBSnapshotTestCase.framework'
   install_framework 'Pods-DCHFyberSDK_Tests/Kiwi.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-DCHFyberSDK_Tests/AFNetworking.framework'
+  install_framework 'Pods-DCHFyberSDK_Tests/DCHFyberSDK.framework'
   install_framework 'Pods-DCHFyberSDK_Tests/FBSnapshotTestCase.framework'
   install_framework 'Pods-DCHFyberSDK_Tests/Kiwi.framework'
 fi

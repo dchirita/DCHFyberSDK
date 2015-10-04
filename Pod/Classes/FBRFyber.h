@@ -16,7 +16,18 @@
  
  @discussion
  *Call this prior to any other requests
- *Consider calling it in <b>application:didFinishLaunchingWithOptions:</b>
+ *Consider calling it in <b>application:didFinishLaunchingWithOptions:</b> like :
+ 
+ <pre>
+ - (BOOL)application:(UIApplication *)application 
+ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+ 
+    [FBRFyber withToken:@"API_KEY"];
+ 
+    return YES;
+ 
+ }
+ </pre>
  */
 + (instancetype)withToken:(NSString *)apiToken;
 
