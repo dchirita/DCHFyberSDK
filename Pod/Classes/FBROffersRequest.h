@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "FBRGenericBlocks.h"
+#import "FBROffersRequestAcceptedResponseTypes.h"
 
 @interface FBROffersRequest : NSObject
 
-+ (instancetype)requestForParams:(NSDictionary *)params;
++ (instancetype)requestForParams:(NSDictionary *)params
+                          apiKey:(NSString *)apiKey
+            acceptedResponseType:(FBROffersRequestAcceptedResponseFormat)acceptedResponseType;
 
 - (void)startWithSuccess:(FBRSuccess)success
                  failure:(FBRFailure)failure;

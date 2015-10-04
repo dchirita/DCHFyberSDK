@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FBRGenericBlocks.h"
+#import "FBROffersRequestAcceptedResponseTypes.h"
 
 FOUNDATION_EXPORT NSString *kFBRFyberOfferParameterFormat; //Mandatory
 FOUNDATION_EXPORT NSString *kFBRFyberOfferParameterAppId; //Mandatory
@@ -51,6 +52,7 @@ FOUNDATION_EXPORT NSString *kFBRFyberOfferParameterDevice;
 + (instancetype)sharedInstance;
 
 - (void)offersForParams:(NSDictionary *)params
+   acceptedResponseType:(FBROffersRequestAcceptedResponseFormat)acceptedResponseType
                 success:(FBRSuccess)success
                 failure:(FBRFailure)failure;
 

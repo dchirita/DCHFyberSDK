@@ -117,6 +117,7 @@
 		65B6AD0A1BC1B97900D0E1D6 /* NSString+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */; };
 		65B6AD0B1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */; };
 		65B6AD0C1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */; };
+		65BEE9151BC1D2E800C3BCF9 /* FBROffersRequestAcceptedResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 65BEE9131BC1D2E800C3BCF9 /* FBROffersRequestAcceptedResponseTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66018BFBE679A2EB38CF352927736584 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B2B29B813CEFB6C04F0BF820BE7FF5 /* UIImage+Snapshot.m */; };
 		668D1882027D672B8E1AE6BFF885E70E /* KWBeforeEachNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 354992402F1ABF58EEFD7104D440A013 /* KWBeforeEachNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67690D561C7B794A5E5FCACE418EBDFB /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E25A20F9731058A82FCFB70FF5F822A /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -464,6 +465,7 @@
 		65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA.h"; sourceTree = "<group>"; };
 		65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA.m"; sourceTree = "<group>"; };
 		65B8DACF0877F3671FCA0F05A036DF1F /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		65BEE9131BC1D2E800C3BCF9 /* FBROffersRequestAcceptedResponseTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROffersRequestAcceptedResponseTypes.h; sourceTree = "<group>"; };
 		665778D51FDAF4A77626C6FE89E67260 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		66DA098FBDA49D3369B02A096F538568 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		67BF0D3AD0F97B78C80DCF2B716B1A3D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
@@ -1182,6 +1184,7 @@
 				65B6AD031BC19F0E00D0E1D6 /* FBRGenericBlocks.h */,
 				65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */,
 				65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */,
+				65BEE9131BC1D2E800C3BCF9 /* FBROffersRequestAcceptedResponseTypes.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1412,6 +1415,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BEE9151BC1D2E800C3BCF9 /* FBROffersRequestAcceptedResponseTypes.h in Headers */,
 				5B4FBDCC247295C358B33BE09D822F80 /* DCHFyberSDK-umbrella.h in Headers */,
 				EDAF03C22A0601E1D5D9CB35C004D6C9 /* FBROffersRequest.h in Headers */,
 				65B6AD051BC19F0E00D0E1D6 /* FBRGenericBlocks.h in Headers */,

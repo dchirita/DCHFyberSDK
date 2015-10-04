@@ -9,9 +9,13 @@
 #import "FBRViewController.h"
 #import "FBRFyber.h"
 
-#import <AdSupport/ASIdentifierManager.h>
+NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
 
 @interface FBRViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *uidTextField;
+@property (weak, nonatomic) IBOutlet UITextField *apiKeyTextField;
+@property (weak, nonatomic) IBOutlet UITextField *appIdTextField;
 
 @end
 
@@ -20,32 +24,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSString *deviceVersion = [[UIDevice currentDevice] systemVersion];
-    NSString *currentTS = [NSString stringWithFormat:@"%f", [[NSDate date] timeIntervalSince1970]];
-    
-    ASIdentifierManager *asiManager = [ASIdentifierManager sharedManager];
-    
-    BOOL isAdvertisingTrackingEnabled = [asiManager isAdvertisingTrackingEnabled];
-    
-    NSString *appleIDFA = @"";
-    
-    if (isAdvertisingTrackingEnabled){
-        appleIDFA = [[asiManager advertisingIdentifier] UUIDString];
-    }
  
-    NSDictionary *params = @{kFBRFyberOfferParameterFormat : @"json",
-                             kFBRFyberOfferParameterAppId : @"2070",
-                             kFBRFyberOfferParameterUID : @"spiderman",
-                             kFBRFyberOfferParameterLocale : @"DE",
-                             kFBRFyberOfferParameterOSVersion : deviceVersion,
-                             kFBRFyberOfferParameterTimestamp : currentTS,
-                             kFBRFyberOfferParameterAppleIdfa : appleIDFA,
-                             kFBRFyberOfferParameterAppleIdfaTrackingEnabled : isAdvertisingTrackingEnabled ? @"true" : false,
-                             kFBRFyberOfferParameterOfferTypes : @"112",
-                             kFBRFyberOfferParameterIP : @"109.235.143.113"};
+    self.uidTextField.text = @"spiderman";
+    self.apiKeyTextField.text = kFyberAPIKey;
+    self.appIdTextField.text = @"2070";
+}
+
+
+- (IBAction)retrieveOffers:(id)sender
+{
+    //normally this should be in the app delegate
+    //it's here to have the option to test by changing it on the fly via the 'apiKeyTextField' value
+    [FBRFyber withAPIKey:self.apiKeyTextField.text];
+    
+    NSDictionary *params = @{kFBRFyberOfferParameterAppId : self.appIdTextField.text,
+                             kFBRFyberOfferParameterUID : self.uidTextField.text,
+                             kFBRFyberOfferParameterOfferTypes : @"112"};
     
     [[FBRFyber sharedInstance] offersForParams:params
+                          acceptedResponseType:FBROffersRequestAcceptedResponseFormatJSON
                                        success:^(id result){
                                            NSLog(@"%@", result);
                                        }

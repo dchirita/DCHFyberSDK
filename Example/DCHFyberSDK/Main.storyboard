@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -16,8 +15,53 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05n-qD-xBh" userLabel="uidTextField">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byt-GY-yxO" userLabel="apiKeyTextField">
+                                <rect key="frame" x="20" y="215" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zin-Lv-TRn" userLabel="appIdTextField">
+                                <rect key="frame" x="20" y="355" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGa-JT-d5l">
+                                <rect key="frame" x="266" y="425" width="68" height="30"/>
+                                <state key="normal" title="Get offers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retrieveOffers:" destination="whP-gf-Uak" eventType="touchUpInside" id="8EN-R2-XLb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zin-Lv-TRn" firstAttribute="centerX" secondItem="05n-qD-xBh" secondAttribute="centerX" id="0K0-mn-ppW"/>
+                            <constraint firstItem="zGa-JT-d5l" firstAttribute="top" secondItem="zin-Lv-TRn" secondAttribute="bottom" constant="40" id="6FQ-Bp-Qu6"/>
+                            <constraint firstAttribute="trailing" secondItem="05n-qD-xBh" secondAttribute="trailing" constant="20" id="Gks-gz-fG0"/>
+                            <constraint firstAttribute="centerY" secondItem="05n-qD-xBh" secondAttribute="centerY" id="HWa-RX-YBH"/>
+                            <constraint firstItem="05n-qD-xBh" firstAttribute="top" secondItem="byt-GY-yxO" secondAttribute="bottom" constant="40" id="ME0-t8-cV0"/>
+                            <constraint firstItem="05n-qD-xBh" firstAttribute="width" secondItem="byt-GY-yxO" secondAttribute="width" id="O0d-lL-2Ia"/>
+                            <constraint firstItem="zGa-JT-d5l" firstAttribute="centerX" secondItem="zin-Lv-TRn" secondAttribute="centerX" id="ZqR-IB-G9Y"/>
+                            <constraint firstItem="05n-qD-xBh" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="bNX-Xz-wdY"/>
+                            <constraint firstItem="05n-qD-xBh" firstAttribute="centerX" secondItem="byt-GY-yxO" secondAttribute="centerX" id="ixL-el-S5G"/>
+                            <constraint firstItem="zin-Lv-TRn" firstAttribute="width" secondItem="05n-qD-xBh" secondAttribute="width" id="odH-f1-57D"/>
+                            <constraint firstAttribute="centerX" secondItem="05n-qD-xBh" secondAttribute="centerX" id="rRH-gP-Fez"/>
+                            <constraint firstItem="zin-Lv-TRn" firstAttribute="top" secondItem="05n-qD-xBh" secondAttribute="bottom" constant="40" id="tjk-XW-TeX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="apiKeyTextField" destination="byt-GY-yxO" id="h6j-aR-hpn"/>
+                        <outlet property="appIdTextField" destination="zin-Lv-TRn" id="SR6-Sb-MM2"/>
+                        <outlet property="uidTextField" destination="05n-qD-xBh" id="B0t-63-bHi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

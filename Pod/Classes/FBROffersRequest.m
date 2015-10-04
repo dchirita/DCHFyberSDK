@@ -16,32 +16,41 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
 
 @interface FBROffersRequest()
 
-@property (nonatomic, strong) NSDictionary *params;
+@property (nonatomic, strong) NSMutableDictionary *params;
+@property (nonatomic, copy) NSString *apiKey;
+@property (nonatomic, assign) FBROffersRequestAcceptedResponseFormat acceptedResponseType;
 
 @end
 
 @implementation FBROffersRequest
 
-- (instancetype)initWithParams:(NSDictionary *)params{
+- (instancetype)initWithParams:(NSDictionary *)params
+                        apiKey:(NSString *)apiKey
+          acceptedResponseType:(FBROffersRequestAcceptedResponseFormat)acceptedResponseType{
     self = [super init];
     
     if (self){
-        _params = params;
+        _params = [params mutableCopy];
+        _apiKey = [apiKey copy];
+        _acceptedResponseType = acceptedResponseType;
     }
     
     return self;
 }
 
-+ (instancetype)requestForParams:(NSDictionary *)params{
-    return [[[self class] alloc] initWithParams:params];
++ (instancetype)requestForParams:(NSDictionary *)params
+                          apiKey:(NSString *)apiKey
+            acceptedResponseType:(FBROffersRequestAcceptedResponseFormat)acceptedResponseType{
+    return [[[self class] alloc] initWithParams:params
+                                     apiKey:apiKey
+                       acceptedResponseType:acceptedResponseType];
 }
 
 - (void)startWithSuccess:(FBRSuccess)success
                  failure:(FBRFailure)failure{
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    
-    NSString *format = self.params[kFBRFyberOfferParameterFormat];
+    NSString *format = FBROffersRequestAcceptedResponseFormatJSON == self.acceptedResponseType ? @"json" : @"xml";
     
 #if defined(DEBUG)
     NSString *appId = self.params[kFBRFyberOfferParameterAppId];
@@ -52,8 +61,9 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     NSString *appleIdfa = self.params[kFBRFyberOfferParameterAppleIdfa];
     NSString *appleIdfaTrackingEnabled = self.params[kFBRFyberOfferParameterAppleIdfaTrackingEnabled];
     
-    NSAssert([format isEqualToString:@"xml"] ||
-             [format isEqualToString:@"json"], @"We only support JSON or XML formars");
+    NSAssert(FBROffersRequestAcceptedResponseFormatXML == self.acceptedResponseType ||
+             FBROffersRequestAcceptedResponseFormatJSON == self.acceptedResponseType,
+             @"We only support JSON or XML formars");
     NSAssert(appId, @"No appId provided");
     NSAssert(uID, @"No uID provided");
     NSAssert(locale, @"No locale provided");
@@ -80,12 +90,12 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
         
         urlParams = [urlParams stringByAppendingString:thePairToAdd];
         
-        if (index != paramsCount - 2){
+        if (index != paramsCount - 1){
             urlParams = [urlParams stringByAppendingString:@"&"];
         }
     }
     
-    NSString *hashKey = [self hashFromParams:self.params];
+    NSString *hashKey = [self hashFromParams:paramsCopy];
     
     urlParams = [NSString stringWithFormat:@"%@&hashkey=%@", urlParams, hashKey];
     
@@ -109,21 +119,17 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     
     NSArray * sortedKeys = [[params allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
     
-    NSUInteger numberOfKeys = [sortedKeys count];
-    
-    for (NSUInteger index = 0; index < numberOfKeys; index++){
+    for (NSString *key in sortedKeys){
         
-        NSString *key = sortedKeys[index];
-        
-        NSString *pair = [NSString stringWithFormat:@"%@-%@", key, params[key]];
+        NSString *pair = [NSString stringWithFormat:@"%@=%@", key, params[key]];
         
         hash = [hash stringByAppendingString:pair];
         
-        if (index != numberOfKeys - 2){
-            hash = [hash stringByAppendingString:@"&"];
-        }
+        hash = [hash stringByAppendingString:@"&"];
     }
-    
+
+    hash = [hash stringByAppendingString:self.apiKey];
+
     return [hash sha1];
 }
 
