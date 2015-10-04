@@ -113,6 +113,10 @@
 		607C912328C48332A43B8A0D0BC213E2 /* KWAny.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD3B6CEF5863A7C806EC5AA5C387DE6 /* KWAny.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		63429DADE487B5C570D0585E3475179B /* KWNotificationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D9E74479575AB64FED15BBDD4ED620 /* KWNotificationMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64AFC339D0B013C5C6F65D2B7AE0A799 /* KWBeKindOfClassMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 98494B24C20AB2413D8784E0737AE0BF /* KWBeKindOfClassMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B6AD051BC19F0E00D0E1D6 /* FBRGenericBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B6AD031BC19F0E00D0E1D6 /* FBRGenericBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B6AD0A1BC1B97900D0E1D6 /* NSString+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */; };
+		65B6AD0B1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */; };
+		65B6AD0C1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */; };
 		66018BFBE679A2EB38CF352927736584 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B2B29B813CEFB6C04F0BF820BE7FF5 /* UIImage+Snapshot.m */; };
 		668D1882027D672B8E1AE6BFF885E70E /* KWBeforeEachNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 354992402F1ABF58EEFD7104D440A013 /* KWBeforeEachNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67690D561C7B794A5E5FCACE418EBDFB /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E25A20F9731058A82FCFB70FF5F822A /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -144,7 +148,7 @@
 		81BEF56CCCDFBDEBAE1397FFA327520A /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD9943B35B6FF2CAB0976BEF379BD68 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81E62B9C6B00B3ED7BEE1EFE28A63E31 /* KWExampleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6620AAE445F5DE63845D11C3BACB01 /* KWExampleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		827544BE8A3EBF6170FB9503649382BC /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BA1F52ECD479E624739621C90F841F /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82DCBA36B1AB5A41399E33013C9F8CAA /* FBOffersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CC46B8D87945D105CA62291300699 /* FBOffersRequest.m */; };
+		82DCBA36B1AB5A41399E33013C9F8CAA /* FBROffersRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CC46B8D87945D105CA62291300699 /* FBROffersRequest.m */; };
 		8354EA09D4494419CD64C0773B2F1BA0 /* DCHFyberSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C68CC2409AB02A0AB62DDA6F24333E6F /* DCHFyberSDK.bundle */; };
 		83C2A7D6BFB67B5DD2C197BDA9089872 /* KWBeMemberOfClassMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F8D482BAFEC41BF564FADE17A625E /* KWBeMemberOfClassMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8845E9B41EFE2697E10D6714E3A91508 /* KWBeTrueMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA5B0744E8C82E0C390831236B2A3E0 /* KWBeTrueMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -251,7 +255,7 @@
 		EB9145A26DED54E18AB0A583D79FA469 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0E518B4B3D7FC572D1759946A9DE25 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC486501278405B17E9EB405AD355457 /* KWSharedExampleRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = B4CD52C37629A3F62E60BA8A3B44EA4B /* KWSharedExampleRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECCD4C4F6E3B792D939D05AA517D9C72 /* KWValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD574EFBB8A49D1BBC5AFB9DFA74AA5 /* KWValue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EDAF03C22A0601E1D5D9CB35C004D6C9 /* FBOffersRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B07B8C040E83282F16FA5967498AAB /* FBOffersRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDAF03C22A0601E1D5D9CB35C004D6C9 /* FBROffersRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B07B8C040E83282F16FA5967498AAB /* FBROffersRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDDE987C2361A1C4245A737A833DDC7A /* KWChangeMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8BA3EA1247566D1165B2C437EB47B0 /* KWChangeMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EE0D2B479D0653AB5899CB734F467F71 /* KWObjCUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D06C388D4D0CD09C91FE173BC302D2 /* KWObjCUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE90360FD585BA83FA017AE895CD0D65 /* KWNotificationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 065AC280A18B100ED0749E3326691FAF /* KWNotificationMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -420,7 +424,7 @@
 		42D6FEA0C04C14B76BCBC897480D0BB9 /* KWFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWFailure.h; path = Classes/Core/KWFailure.h; sourceTree = "<group>"; };
 		434C058EBF6A198D0799B2F21745C7C3 /* KWBlockRaiseMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBlockRaiseMatcher.m; path = Classes/Matchers/KWBlockRaiseMatcher.m; sourceTree = "<group>"; };
 		446C32B75507C1F46F846F73114BE2BC /* Pods-DCHFyberSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DCHFyberSDK_Example.modulemap"; sourceTree = "<group>"; };
-		46B07B8C040E83282F16FA5967498AAB /* FBOffersRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBOffersRequest.h; sourceTree = "<group>"; };
+		46B07B8C040E83282F16FA5967498AAB /* FBROffersRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBROffersRequest.h; sourceTree = "<group>"; };
 		472BDEF58C876CD4E072EBE2D12B83E2 /* KWBeIdenticalToMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeIdenticalToMatcher.m; path = Classes/Matchers/KWBeIdenticalToMatcher.m; sourceTree = "<group>"; };
 		47469AB4C44CB2667816AAB27A3A3628 /* KWVerifying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWVerifying.h; path = Classes/Verifiers/KWVerifying.h; sourceTree = "<group>"; };
 		48A0B4628F352AD1E21D41A63FB8E11D /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
@@ -439,7 +443,7 @@
 		58528DA87DCE00129EDE780A02C92AA6 /* Kiwi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kiwi.modulemap; sourceTree = "<group>"; };
 		5883EA41788BCB899EE3A8B455446268 /* NSValue+KiwiAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+KiwiAdditions.m"; path = "Classes/Core/NSValue+KiwiAdditions.m"; sourceTree = "<group>"; };
 		58DA1A5E2D9FCA041DEA8B5AFB29E096 /* KWLet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWLet.h; path = Classes/Core/KWLet.h; sourceTree = "<group>"; };
-		5A4CC46B8D87945D105CA62291300699 /* FBOffersRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBOffersRequest.m; sourceTree = "<group>"; };
+		5A4CC46B8D87945D105CA62291300699 /* FBROffersRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBROffersRequest.m; sourceTree = "<group>"; };
 		5A99B3D7DD1386115749629B5CBE419C /* KWFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWFailure.m; path = Classes/Core/KWFailure.m; sourceTree = "<group>"; };
 		5AD45BAC0937232D4EC08F4699D069CD /* KWFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWFormatter.m; path = Classes/Core/KWFormatter.m; sourceTree = "<group>"; };
 		5CABA40DF1C8DB4AC6A350392C7492FB /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
@@ -456,6 +460,9 @@
 		6471C3999BB5904F9E75320923BE9182 /* KWBeWithinMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeWithinMatcher.m; path = Classes/Matchers/KWBeWithinMatcher.m; sourceTree = "<group>"; };
 		64B9C36827C21C05F495AA5173990391 /* FBRFyber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBRFyber.h; sourceTree = "<group>"; };
 		658B224FE2CDAC69F65AC171231D9472 /* KWUserDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWUserDefinedMatcher.m; path = Classes/Matchers/KWUserDefinedMatcher.m; sourceTree = "<group>"; };
+		65B6AD031BC19F0E00D0E1D6 /* FBRGenericBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRGenericBlocks.h; sourceTree = "<group>"; };
+		65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA.h"; sourceTree = "<group>"; };
+		65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA.m"; sourceTree = "<group>"; };
 		65B8DACF0877F3671FCA0F05A036DF1F /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		665778D51FDAF4A77626C6FE89E67260 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		66DA098FBDA49D3369B02A096F538568 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
@@ -1166,12 +1173,15 @@
 		CECE3AA66B7AD9EABE67C55811902A07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46B07B8C040E83282F16FA5967498AAB /* FBOffersRequest.h */,
-				5A4CC46B8D87945D105CA62291300699 /* FBOffersRequest.m */,
+				46B07B8C040E83282F16FA5967498AAB /* FBROffersRequest.h */,
+				5A4CC46B8D87945D105CA62291300699 /* FBROffersRequest.m */,
 				64B9C36827C21C05F495AA5173990391 /* FBRFyber.h */,
 				7539D95DAD00F3AD736C94A3A830BD2D /* FBRFyber.m */,
 				492D81CFE8339E29B768D5D0533A1092 /* FBROfferItem.h */,
 				C0E8BA5EB7BB692ACFDBE50F0D97412D /* FBROfferItem.m */,
+				65B6AD031BC19F0E00D0E1D6 /* FBRGenericBlocks.h */,
+				65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */,
+				65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1403,7 +1413,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4FBDCC247295C358B33BE09D822F80 /* DCHFyberSDK-umbrella.h in Headers */,
-				EDAF03C22A0601E1D5D9CB35C004D6C9 /* FBOffersRequest.h in Headers */,
+				EDAF03C22A0601E1D5D9CB35C004D6C9 /* FBROffersRequest.h in Headers */,
+				65B6AD051BC19F0E00D0E1D6 /* FBRGenericBlocks.h in Headers */,
+				65B6AD0A1BC1B97900D0E1D6 /* NSString+SHA.h in Headers */,
 				2950EEE3C0BF348E627230CBA0B26D66 /* FBRFyber.h in Headers */,
 				CEF3376EA032345650EFAF4FBEA7ED42 /* FBROfferItem.h in Headers */,
 			);
@@ -1729,6 +1741,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B6AD0C1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1737,7 +1750,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07FE2C6EE48DFBA4E00B1ADBDE09C33 /* DCHFyberSDK-dummy.m in Sources */,
-				82DCBA36B1AB5A41399E33013C9F8CAA /* FBOffersRequest.m in Sources */,
+				82DCBA36B1AB5A41399E33013C9F8CAA /* FBROffersRequest.m in Sources */,
+				65B6AD0B1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */,
 				02F3D294A9F19DC008C85A556179B766 /* FBRFyber.m in Sources */,
 				6E18C2F4BA8C9FE97B8435CDDC854EE6 /* FBROfferItem.m in Sources */,
 			);
