@@ -8,6 +8,7 @@
 
 #import "FBRFyber.h"
 #import "FBROffersRequest.h"
+#import "FBROffersFactory.h"
 #import <AdSupport/ASIdentifierManager.h>
 
 NSString const *kFBRFyberOfferParameterFormat = @"format";
@@ -79,8 +80,44 @@ static FBRFyber *sharedInstance = nil;
                 failure:(FBRFailure)failure{
     NSAssert(self.apiKey, @"You have to call [FBRFyber withAPIKey:] first");
     
-    NSMutableDictionary *requestParams = [[NSMutableDictionary alloc] initWithDictionary:params];
+    NSDictionary *requestParams = [self addInstalationParamsToUserParams:params];
+    
+    FBROffersRequest *request = [FBROffersRequest requestForParams:requestParams
+                                                            apiKey:self.apiKey
+                                              acceptedResponseType:acceptedResponseType];
+    
+    [_requests addObject:request];
+    
+    __weak typeof(self) weakSelf = self;
+    
+    [request startWithSuccess:^(id result){
+        
+        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+            
+            NSDictionary *offersAsDictionary = result;
+            
+            NSArray *offers = [FBROffersFactory offersFromDictionary:offersAsDictionary];
+            
+            dispatch_async(dispatch_get_main_queue(), ^(void){
+                
+                //dispatch result
+                success(offers);
+                
+                //remove the request since it's completed now
+                [weakSelf.requests removeObject:request];
+            });
+        });
+        
+    }failure:^(NSError *error){
+        failure(error);
+        [weakSelf.requests removeObject:request];
+    }];
+}
 
+- (NSDictionary *)addInstalationParamsToUserParams:(NSDictionary *)params{
+    
+    NSMutableDictionary *requestParams = [[NSMutableDictionary alloc] initWithDictionary:params];
+    
     NSString *deviceVersion = [[UIDevice currentDevice] systemVersion];
     NSString *currentTS = [NSString stringWithFormat:@"%lu", (unsigned long)[[NSDate date] timeIntervalSince1970]];
     
@@ -107,25 +144,10 @@ static FBRFyber *sharedInstance = nil;
     
     requestParams[kFBRFyberOfferParameterAppleIdfa] = appleIDFA;
     requestParams[kFBRFyberOfferParameterAppleIdfaTrackingEnabled] = isAdvertisingTrackingEnabled ? @"true":
-                                                                                                    @"false";
+    @"false";
     [requestParams addEntriesFromDictionary:params];
     
-    FBROffersRequest *request = [FBROffersRequest requestForParams:requestParams
-                                                            apiKey:self.apiKey
-                                              acceptedResponseType:acceptedResponseType];
-    
-    [_requests addObject:request];
-    
-    __weak typeof(self) weakSelf = self;
-    
-    [request startWithSuccess:^(id result){
-                        success(result);
-                        [weakSelf.requests removeObject:request];
-                      }
-                      failure:^(NSError *error){
-                          failure(error);
-                          [weakSelf.requests removeObject:request];
-                      }];
+    return requestParams;
 }
 
 @end

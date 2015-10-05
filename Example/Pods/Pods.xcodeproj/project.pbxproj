@@ -113,6 +113,10 @@
 		607C912328C48332A43B8A0D0BC213E2 /* KWAny.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD3B6CEF5863A7C806EC5AA5C387DE6 /* KWAny.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		63429DADE487B5C570D0585E3475179B /* KWNotificationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D9E74479575AB64FED15BBDD4ED620 /* KWNotificationMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64AFC339D0B013C5C6F65D2B7AE0A799 /* KWBeKindOfClassMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 98494B24C20AB2413D8784E0737AE0BF /* KWBeKindOfClassMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65657F7A1BC2F4CB008847F7 /* FBROffersFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 65657F781BC2F4CB008847F7 /* FBROffersFactory.h */; };
+		65657F7B1BC2F4CB008847F7 /* FBROffersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65657F791BC2F4CB008847F7 /* FBROffersFactory.m */; };
+		65657F7C1BC2F4CB008847F7 /* FBROffersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65657F791BC2F4CB008847F7 /* FBROffersFactory.m */; };
+		65657F7D1BC2F9FB008847F7 /* FBROfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E8BA5EB7BB692ACFDBE50F0D97412D /* FBROfferItem.m */; };
 		65B6AD051BC19F0E00D0E1D6 /* FBRGenericBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B6AD031BC19F0E00D0E1D6 /* FBRGenericBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65B6AD0A1BC1B97900D0E1D6 /* NSString+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */; };
 		65B6AD0B1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */; };
@@ -460,6 +464,8 @@
 		6454F021ED986561F0CECADC1F217EED /* KWRegisterMatchersNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWRegisterMatchersNode.m; path = Classes/Nodes/KWRegisterMatchersNode.m; sourceTree = "<group>"; };
 		6471C3999BB5904F9E75320923BE9182 /* KWBeWithinMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeWithinMatcher.m; path = Classes/Matchers/KWBeWithinMatcher.m; sourceTree = "<group>"; };
 		64B9C36827C21C05F495AA5173990391 /* FBRFyber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBRFyber.h; sourceTree = "<group>"; };
+		65657F781BC2F4CB008847F7 /* FBROffersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROffersFactory.h; sourceTree = "<group>"; };
+		65657F791BC2F4CB008847F7 /* FBROffersFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROffersFactory.m; sourceTree = "<group>"; };
 		658B224FE2CDAC69F65AC171231D9472 /* KWUserDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWUserDefinedMatcher.m; path = Classes/Matchers/KWUserDefinedMatcher.m; sourceTree = "<group>"; };
 		65B6AD031BC19F0E00D0E1D6 /* FBRGenericBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRGenericBlocks.h; sourceTree = "<group>"; };
 		65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA.h"; sourceTree = "<group>"; };
@@ -1185,6 +1191,8 @@
 				65B6AD081BC1B97900D0E1D6 /* NSString+SHA.h */,
 				65B6AD091BC1B97900D0E1D6 /* NSString+SHA.m */,
 				65BEE9131BC1D2E800C3BCF9 /* FBROffersRequestAcceptedResponseTypes.h */,
+				65657F781BC2F4CB008847F7 /* FBROffersFactory.h */,
+				65657F791BC2F4CB008847F7 /* FBROffersFactory.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1422,6 +1430,7 @@
 				65B6AD0A1BC1B97900D0E1D6 /* NSString+SHA.h in Headers */,
 				2950EEE3C0BF348E627230CBA0B26D66 /* FBRFyber.h in Headers */,
 				CEF3376EA032345650EFAF4FBEA7ED42 /* FBROfferItem.h in Headers */,
+				65657F7A1BC2F4CB008847F7 /* FBROffersFactory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1745,7 +1754,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65657F7C1BC2F4CB008847F7 /* FBROffersFactory.m in Sources */,
 				65B6AD0C1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */,
+				65657F7D1BC2F9FB008847F7 /* FBROfferItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1757,6 +1768,7 @@
 				82DCBA36B1AB5A41399E33013C9F8CAA /* FBROffersRequest.m in Sources */,
 				65B6AD0B1BC1B97900D0E1D6 /* NSString+SHA.m in Sources */,
 				02F3D294A9F19DC008C85A556179B766 /* FBRFyber.m in Sources */,
+				65657F7B1BC2F4CB008847F7 /* FBROffersFactory.m in Sources */,
 				6E18C2F4BA8C9FE97B8435CDDC854EE6 /* FBROfferItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

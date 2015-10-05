@@ -20,6 +20,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		65657F801BC2FBEB008847F7 /* FBRResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65657F7F1BC2FBEB008847F7 /* FBRResultsViewController.m */; };
+		65657F841BC2FE00008847F7 /* FBROfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65657F831BC2FE00008847F7 /* FBROfferTableViewCell.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A44B7000A7CBA47655D0A190 /* Pods_DCHFyberSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E180C0D68585EC0A568713C /* Pods_DCHFyberSDK_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B9B6AFD7A938A96743AAC448 /* Pods_DCHFyberSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E0E9DD154DC920D7036192 /* Pods_DCHFyberSDK_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -60,6 +62,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		65657F7E1BC2FBEB008847F7 /* FBRResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRResultsViewController.h; sourceTree = "<group>"; };
+		65657F7F1BC2FBEB008847F7 /* FBRResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRResultsViewController.m; sourceTree = "<group>"; };
+		65657F821BC2FE00008847F7 /* FBROfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROfferTableViewCell.h; sourceTree = "<group>"; };
+		65657F831BC2FE00008847F7 /* FBROfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROfferTableViewCell.m; sourceTree = "<group>"; };
 		6F5E418659436A455EB6F802 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9EFF387A814B90DA57D8AA91 /* Pods-DCHFyberSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCHFyberSDK_Tests/Pods-DCHFyberSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 		6003F593195388D20070C39A /* Example for DCHFyberSDK */ = {
 			isa = PBXGroup;
 			children = (
+				65657F811BC2FDD7008847F7 /* Views */,
 				6003F59C195388D20070C39A /* FBRAppDelegate.h */,
 				6003F59D195388D20070C39A /* FBRAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -148,6 +155,8 @@
 				6003F5A6195388D20070C39A /* FBRViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				65657F7E1BC2FBEB008847F7 /* FBRResultsViewController.h */,
+				65657F7F1BC2FBEB008847F7 /* FBRResultsViewController.m */,
 			);
 			name = "Example for DCHFyberSDK";
 			path = DCHFyberSDK;
@@ -191,6 +200,15 @@
 				218A5B0EB98CE236C01E9827 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		65657F811BC2FDD7008847F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65657F821BC2FE00008847F7 /* FBROfferTableViewCell.h */,
+				65657F831BC2FE00008847F7 /* FBROfferTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,8 +408,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65657F801BC2FBEB008847F7 /* FBRResultsViewController.m in Sources */,
 				6003F59E195388D20070C39A /* FBRAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* FBRViewController.m in Sources */,
+				65657F841BC2FE00008847F7 /* FBROfferTableViewCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

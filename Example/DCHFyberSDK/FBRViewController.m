@@ -8,6 +8,7 @@
 
 #import "FBRViewController.h"
 #import "FBRFyber.h"
+#import "FBRResultsViewController.h"
 
 NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
 
@@ -16,6 +17,8 @@ NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
 @property (weak, nonatomic) IBOutlet UITextField *uidTextField;
 @property (weak, nonatomic) IBOutlet UITextField *apiKeyTextField;
 @property (weak, nonatomic) IBOutlet UITextField *appIdTextField;
+
+@property (nonatomic, strong) NSArray *offers;
 
 @end
 
@@ -33,6 +36,9 @@ NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
 
 - (IBAction)retrieveOffers:(id)sender
 {
+    //reset if pressed multiple times
+    self.offers = nil;
+    
     //normally this should be in the app delegate
     //it's here to have the option to test by changing it on the fly via the 'apiKeyTextField' value
     [FBRFyber withAPIKey:self.apiKeyTextField.text];
@@ -43,12 +49,29 @@ NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
     
     [[FBRFyber sharedInstance] offersForParams:params
                           acceptedResponseType:FBROffersRequestAcceptedResponseFormatJSON
-                                       success:^(id result){
-                                           NSLog(@"%@", result);
+                                       success:^(NSArray *offers){
+                                           if (0 != [offers count]){
+                                               [self showOffersScreenWithOffers:offers];
+                                           }
                                        }
                                        failure:^(NSError *error){
                                            NSLog(@"%@", [error localizedDescription]);
                                        }];
+}
+
+#pragma mark - Private Methods
+
+- (void)showOffersScreenWithOffers:(NSArray *)offers{
+    
+    self.offers = offers;
+    
+    [self performSegueWithIdentifier:@"showResultsScreen"
+                              sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender{
+    FBRResultsViewController* fbrResults = segue.destinationViewController;
+    fbrResults.offers = self.offers;
 }
 
 @end
