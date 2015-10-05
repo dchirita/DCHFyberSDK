@@ -134,6 +134,7 @@
                                         <connections>
                                             <outlet property="payoutLabel" destination="IVy-zO-h74" id="meA-ps-se7"/>
                                             <outlet property="teaserLabel" destination="2oG-vC-7Sb" id="r2D-Sg-heL"/>
+                                            <outlet property="thumbnailImageView" destination="h4F-8w-DQ9" id="Qh2-fx-JBK"/>
                                             <outlet property="titleLabel" destination="wMA-6p-CNv" id="QvL-oa-pdf"/>
                                         </connections>
                                     </tableViewCell>

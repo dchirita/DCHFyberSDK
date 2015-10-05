@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'DCHFyberSDK_Example', :exclusive => true do
   pod "DCHFyberSDK", :path => "../"
+  pod 'SDWebImage', '~>3.7'
 end
 
 target 'DCHFyberSDK_Tests', :exclusive => true do
@@ -10,5 +11,4 @@ target 'DCHFyberSDK_Tests', :exclusive => true do
 
   pod 'Kiwi'
   pod 'FBSnapshotTestCase'
-  pod 'AFNetworking', '~> 2.6'
 end
