@@ -12,7 +12,8 @@
 
 #import "FBRFyber.h"
 
-NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
+static NSString * const kSignatureHTTPHeaderField = @"X-Sponsorpay-Response-Signature";
+static NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
 
 @interface FBROffersRequest()
 
@@ -104,11 +105,12 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     [manager GET:url
       parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-             NSLog(@"JSON: %@", responseObject);
+             
+             __unused BOOL signatureMatches = [self checkSignatureForResponseHeaders:[operation.response allHeaderFields]
+                                                                             content:operation.responseString];
              
              success(responseObject);
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-             NSLog(@"Error: %@", error);
              failure(error);
          }];
 }
@@ -131,6 +133,22 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     hash = [hash stringByAppendingString:self.apiKey];
 
     return [hash sha1];
+}
+
+- (BOOL)checkSignatureForResponseHeaders:(NSDictionary *)responseHeaders
+                                 content:(NSString *)responseString{
+    
+    NSString *responseSignature = responseHeaders[kSignatureHTTPHeaderField];
+    
+    NSString *contentoHash = [responseString stringByAppendingString:self.apiKey];
+    
+    NSString *responseHash = [contentoHash sha1];
+    
+    BOOL signatureMatches = [responseSignature isEqualToString:responseHash];
+    
+    NSAssert(signatureMatches, @"Response signature mismatch");
+    
+    return signatureMatches;
 }
 
 @end
