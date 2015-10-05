@@ -144,7 +144,7 @@ static FBRFyber *sharedInstance = nil;
     
     requestParams[kFBRFyberOfferParameterAppleIdfa] = appleIDFA;
     requestParams[kFBRFyberOfferParameterAppleIdfaTrackingEnabled] = isAdvertisingTrackingEnabled ? @"true":
-    @"false";
+                                                                                                    @"false";
     [requestParams addEntriesFromDictionary:params];
     
     return requestParams;
