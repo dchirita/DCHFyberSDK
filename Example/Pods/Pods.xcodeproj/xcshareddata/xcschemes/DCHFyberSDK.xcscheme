@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A975E91895BB5AC8A832626"
+               BlueprintIdentifier = "20D96092A256EC44F22C2A3F"
                BuildableName = "DCHFyberSDK.framework"
                BlueprintName = "DCHFyberSDK"
                ReferencedContainer = "container:Pods.xcodeproj">
