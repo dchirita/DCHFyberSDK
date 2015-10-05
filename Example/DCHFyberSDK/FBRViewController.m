@@ -53,6 +53,9 @@ NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
                                            if (0 != [offers count]){
                                                [self showOffersScreenWithOffers:offers];
                                            }
+                                           else{
+                                               [self showNoOffersAvailable];
+                                           }
                                        }
                                        failure:^(NSError *error){
                                            NSLog(@"%@", [error localizedDescription]);
@@ -60,6 +63,21 @@ NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
 }
 
 #pragma mark - Private Methods
+
+- (void)showNoOffersAvailable{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"No offers"
+                                                                   message:nil
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+        
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK"
+                                                     style:UIAlertActionStyleCancel
+                                                   handler:nil];
+    [alert addAction:action];
+    
+    [self presentViewController:alert
+                       animated:YES
+                     completion:nil];
+}
 
 - (void)showOffersScreenWithOffers:(NSArray *)offers{
     
