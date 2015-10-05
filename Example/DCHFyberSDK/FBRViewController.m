@@ -41,6 +41,7 @@ NSString * const kFyberAPIKey = @"1c915e3b5d42d05136185030892fbb846c278927";
     
     //normally this should be in the app delegate
     //it's here to have the option to test by changing it on the fly via the 'apiKeyTextField' value
+    //ONLY AND ONLY at FIRST retrieval
     [FBRFyber withAPIKey:self.apiKeyTextField.text];
     
     NSDictionary *params = @{kFBRFyberOfferParameterAppId : self.appIdTextField.text,
