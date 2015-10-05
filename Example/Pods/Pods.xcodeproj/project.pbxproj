@@ -124,6 +124,12 @@
 		63ABD7515DDEF8B873AC2D19F6FD06A7 /* Pods-DCHFyberSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77157245F8390D59091D0F4D0778D043 /* Pods-DCHFyberSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		653744B3FA5711F3A89F10EA2C0C60D0 /* KWRespondToSelectorMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF13822F40861132C9BDFA9F845CD2D /* KWRespondToSelectorMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6581986F71E621626D8DE8557282D2BD /* NSObject+KiwiMockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D39D6766F64281253F3983A6CCA304 /* NSObject+KiwiMockAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		65C0C8C71BC324C900BF467F /* FBRLinkGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C0C8C51BC324C900BF467F /* FBRLinkGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65C0C8C81BC324C900BF467F /* FBRLinkGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C0C8C61BC324C900BF467F /* FBRLinkGenerator.m */; };
+		65C0C8C91BC324C900BF467F /* FBRLinkGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C0C8C61BC324C900BF467F /* FBRLinkGenerator.m */; };
+		65C0C8CA1BC326F800BF467F /* FBRLinkGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C0C8C61BC324C900BF467F /* FBRLinkGenerator.m */; };
+		65C0C8CB1BC3270800BF467F /* FBRLinkGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C0C8C51BC324C900BF467F /* FBRLinkGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65C0C8CC1BC3270900BF467F /* FBRLinkGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C0C8C51BC324C900BF467F /* FBRLinkGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65E613608D1C374F51CF9ED28A804CA4 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C4D86988E12505A3F4D641D3A6575 /* FBSnapshotTestCasePlatform.m */; };
 		670520DAF8E589C721D024B401E41B84 /* KWEqualMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FC3FB81437655680528CEEE1EBF068 /* KWEqualMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67266B31FF6088E00ABD04BD2EA82A13 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B4E571A83C7139215C766DF64FCFC5 /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -518,6 +524,8 @@
 		64C739B16963A38A77D3806058B5748A /* KWBlockRaiseMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBlockRaiseMatcher.m; path = Classes/Matchers/KWBlockRaiseMatcher.m; sourceTree = "<group>"; };
 		64FF3882C1CB730647B728CA4D6B0C07 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		653852F5A6BEF1525B44D3B4DE78B9A2 /* KWReceiveMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWReceiveMatcher.m; path = Classes/Matchers/KWReceiveMatcher.m; sourceTree = "<group>"; };
+		65C0C8C51BC324C900BF467F /* FBRLinkGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRLinkGenerator.h; sourceTree = "<group>"; };
+		65C0C8C61BC324C900BF467F /* FBRLinkGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRLinkGenerator.m; sourceTree = "<group>"; };
 		66848B793C8F96D9D9956D4C6E50B31C /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		68A015B17591212CA3E49A5632F2E47D /* KWFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWFailure.m; path = Classes/Core/KWFailure.m; sourceTree = "<group>"; };
 		691431EC078EC27324ECEA24B2D3AF18 /* KWBeMemberOfClassMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeMemberOfClassMatcher.m; path = Classes/Matchers/KWBeMemberOfClassMatcher.m; sourceTree = "<group>"; };
@@ -1302,6 +1310,8 @@
 				A69AFE1BC0D34897FA9F774E71A05BA9 /* FBROffersRequestAcceptedResponseTypes.h */,
 				DFCEB863017476433ECCFDD473D04ED3 /* NSString+SHA.h */,
 				960549ADF23A4F77C04EB816B06D134C /* NSString+SHA.m */,
+				65C0C8C51BC324C900BF467F /* FBRLinkGenerator.h */,
+				65C0C8C61BC324C900BF467F /* FBRLinkGenerator.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1555,6 +1565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B89A7A40B257B6FBFB488EE5A1D6F6 /* Pods-DCHFyberSDK_Tests-umbrella.h in Headers */,
+				65C0C8CC1BC3270900BF467F /* FBRLinkGenerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1565,6 +1576,7 @@
 				BDCEEC46FE791DA362855AA7A98FBF21 /* DCHFyberSDK-umbrella.h in Headers */,
 				1223586BD16EC67C372F91519C1C969A /* FBRFyber.h in Headers */,
 				8D0F0D92B7A738BFA33CB82C826E9248 /* FBRGenericBlocks.h in Headers */,
+				65C0C8C71BC324C900BF467F /* FBRLinkGenerator.h in Headers */,
 				0D3C8E119C8AFBD77A41B909E30BCF7E /* FBROfferItem.h in Headers */,
 				D4C0C2464925769EF98E840BA03194EA /* FBROffersFactory.h in Headers */,
 				DDE02DA64AE6EFEFD60142024DDABF75 /* FBROffersRequest.h in Headers */,
@@ -1578,6 +1590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63ABD7515DDEF8B873AC2D19F6FD06A7 /* Pods-DCHFyberSDK_Example-umbrella.h in Headers */,
+				65C0C8CB1BC3270800BF467F /* FBRLinkGenerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1809,6 +1822,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C0C8CA1BC326F800BF467F /* FBRLinkGenerator.m in Sources */,
 				F2CDF06457CC99EA4EA23CBF9DF2812E /* Pods-DCHFyberSDK_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1911,6 +1925,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5710DD24F7B405789548B33957F3E4D3 /* DCHFyberSDK-dummy.m in Sources */,
+				65C0C8C81BC324C900BF467F /* FBRLinkGenerator.m in Sources */,
 				D0CF4E7679C3072B30907E51F2193C71 /* FBRFyber.m in Sources */,
 				05700F64C7B80B4CD5F112434F4C3BEE /* FBROfferItem.m in Sources */,
 				F4586359A0A22B9C5CAB72F4B8585EF1 /* FBROffersFactory.m in Sources */,
@@ -1923,6 +1938,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C0C8C91BC324C900BF467F /* FBRLinkGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

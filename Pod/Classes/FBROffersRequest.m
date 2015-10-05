@@ -9,11 +9,11 @@
 #import "FBROffersRequest.h"
 #import "AFNetworking.h"
 #import "NSString+SHA.h"
+#import "FBRLinkGenerator.h"
 
 #import "FBRFyber.h"
 
 static NSString * const kSignatureHTTPHeaderField = @"X-Sponsorpay-Response-Signature";
-static NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
 
 @interface FBROffersRequest()
 
@@ -49,10 +49,6 @@ static NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
 
 - (void)startWithSuccess:(FBRSuccess)success
                  failure:(FBRFailure)failure{
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
-    NSString *format = FBROffersRequestAcceptedResponseFormatJSON == self.acceptedResponseType ? @"json" : @"xml";
-    
 #if defined(DEBUG)
     NSString *appId = self.params[kFBRFyberOfferParameterAppId];
     NSString *uID = self.params[kFBRFyberOfferParameterUID];
@@ -74,33 +70,9 @@ static NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     NSAssert(appleIdfaTrackingEnabled, @"No appleIdfaTrackingEnabled provided");
 #endif
     
-    NSString *urlParams = [NSString stringWithFormat:@"offers.%@?", format];
+    NSString *url = [self urlForParams:self.params];
     
-    NSMutableDictionary *paramsCopy = [[NSMutableDictionary alloc] initWithDictionary:self.params];
-    
-    [paramsCopy removeObjectForKey:kFBRFyberOfferParameterFormat];
-    
-    NSUInteger paramsCount = [paramsCopy count];
-    
-    NSArray *paramsKeys = [[paramsCopy allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
-    
-    for (NSInteger index = 0; index < paramsCount; index++){
-        NSString *paramKey = paramsKeys[index];
-        
-        NSString *thePairToAdd = [NSString stringWithFormat:@"%@=%@", paramKey, paramsCopy[paramKey]];
-        
-        urlParams = [urlParams stringByAppendingString:thePairToAdd];
-        
-        if (index != paramsCount - 1){
-            urlParams = [urlParams stringByAppendingString:@"&"];
-        }
-    }
-    
-    NSString *hashKey = [self hashFromParams:paramsCopy];
-    
-    urlParams = [NSString stringWithFormat:@"%@&hashkey=%@", urlParams, hashKey];
-    
-    NSString *url = [kFyberBaseURL stringByAppendingString:urlParams];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     [manager GET:url
       parameters:nil
@@ -115,24 +87,10 @@ static NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
          }];
 }
 
-- (NSString *)hashFromParams:(NSDictionary *)params{
-
-    NSString *hash = @"";
-    
-    NSArray * sortedKeys = [[params allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
-    
-    for (NSString *key in sortedKeys){
-        
-        NSString *pair = [NSString stringWithFormat:@"%@=%@", key, params[key]];
-        
-        hash = [hash stringByAppendingString:pair];
-        
-        hash = [hash stringByAppendingString:@"&"];
-    }
-
-    hash = [hash stringByAppendingString:self.apiKey];
-
-    return [hash sha1];
+- (NSString *)urlForParams:(NSDictionary *)params{
+    return [FBRLinkGenerator fyberLinkForParams:params
+                                         apiKey:self.apiKey
+                           acceptedResponseType:self.acceptedResponseType];
 }
 
 - (BOOL)checkSignatureForResponseHeaders:(NSDictionary *)responseHeaders
