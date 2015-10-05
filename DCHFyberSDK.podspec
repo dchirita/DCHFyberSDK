@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DCHFyberSDK"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "DCHFyberSDK is a wrapper above Fyber API." 
   s.description      = "It is supposed to provide anything you need to have access to Fyber ADS engine by only adding the specific data such as API key provided by Fyber Team."
 

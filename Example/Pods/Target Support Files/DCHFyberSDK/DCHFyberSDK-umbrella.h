@@ -2,6 +2,7 @@
 
 #import "FBRFyber.h"
 #import "FBRGenericBlocks.h"
+#import "FBRLinkGenerator.h"
 #import "FBROfferItem.h"
 #import "FBROffersFactory.h"
 #import "FBROffersRequest.h"
