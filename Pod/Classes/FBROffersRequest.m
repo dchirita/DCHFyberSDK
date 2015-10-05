@@ -73,7 +73,7 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     NSAssert(appleIdfaTrackingEnabled, @"No appleIdfaTrackingEnabled provided");
 #endif
     
-    NSString *urlParams = [NSString stringWithFormat:@"offers.%@&", format];
+    NSString *urlParams = [NSString stringWithFormat:@"offers.%@?", format];
     
     NSMutableDictionary *paramsCopy = [[NSMutableDictionary alloc] initWithDictionary:self.params];
     
@@ -81,7 +81,7 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     
     NSUInteger paramsCount = [paramsCopy count];
     
-    NSArray *paramsKeys = [paramsCopy allKeys];
+    NSArray *paramsKeys = [[paramsCopy allKeys] sortedArrayUsingSelector: @selector(caseInsensitiveCompare:)];
     
     for (NSInteger index = 0; index < paramsCount; index++){
         NSString *paramKey = paramsKeys[index];
@@ -99,7 +99,7 @@ NSString * const kFyberBaseURL = @"http://api.fyber.com/feed/v1/";
     
     urlParams = [NSString stringWithFormat:@"%@&hashkey=%@", urlParams, hashKey];
     
-    NSString *url = [[kFyberBaseURL stringByAppendingString:urlParams] lowercaseString];
+    NSString *url = [kFyberBaseURL stringByAppendingString:urlParams];
     
     [manager GET:url
       parameters:nil
