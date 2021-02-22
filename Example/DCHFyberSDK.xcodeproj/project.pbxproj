@@ -13,36 +13,30 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* FBRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* FBRAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* FBRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* FBRViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		65657F801BC2FBEB008847F7 /* FBRResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65657F7F1BC2FBEB008847F7 /* FBRResultsViewController.m */; };
-		65657F841BC2FE00008847F7 /* FBROfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65657F831BC2FE00008847F7 /* FBROfferTableViewCell.m */; };
+		6566E5BD25E3C06F00641150 /* MainFlowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566E5AF25E3C06F00641150 /* MainFlowHandler.m */; };
+		6566E5BE25E3C06F00641150 /* FBRResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566E5B325E3C06F00641150 /* FBRResultsViewController.m */; };
+		6566E5BF25E3C06F00641150 /* FBRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566E5B625E3C06F00641150 /* FBRViewController.m */; };
+		6566E5C025E3C06F00641150 /* UIViewController+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566E5B825E3C06F00641150 /* UIViewController+Creation.m */; };
+		6566E5C125E3C06F00641150 /* FBROfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566E5BC25E3C06F00641150 /* FBROfferTableViewCell.m */; };
+		6566E61C25E3C35700641150 /* DCHFyberSDK_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566E61B25E3C35700641150 /* DCHFyberSDK_ExampleTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A44B7000A7CBA47655D0A190 /* Pods_DCHFyberSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E180C0D68585EC0A568713C /* Pods_DCHFyberSDK_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B9B6AFD7A938A96743AAC448 /* Pods_DCHFyberSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E0E9DD154DC920D7036192 /* Pods_DCHFyberSDK_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A803B9A55DD444DAF45DB1CA /* Pods_DCHFyberSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D57E776732C4194FD3E83A /* Pods_DCHFyberSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+		6566E61E25E3C35700641150 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = DCHFyberSDK;
+			remoteInfo = DCHFyberSDK_Example;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		097EBC88E10EA99FD12DFFD2 /* Pods-DCHFyberSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCHFyberSDK_Tests/Pods-DCHFyberSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		218A5B0EB98CE236C01E9827 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		26E0E9DD154DC920D7036192 /* Pods_DCHFyberSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCHFyberSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54218E66C3C293E40F300644 /* Pods-DCHFyberSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5E180C0D68585EC0A568713C /* Pods_DCHFyberSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCHFyberSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEAF795F78ADBADF25D2970 /* Pods-DCHFyberSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DCHFyberSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCHFyberSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,23 +47,24 @@
 		6003F59B195388D20070C39A /* DCHFyberSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCHFyberSDK-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* FBRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBRAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* FBRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBRAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* FBRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBRViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* FBRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBRViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* DCHFyberSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCHFyberSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		65657F7E1BC2FBEB008847F7 /* FBRResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRResultsViewController.h; sourceTree = "<group>"; };
-		65657F7F1BC2FBEB008847F7 /* FBRResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRResultsViewController.m; sourceTree = "<group>"; };
-		65657F821BC2FE00008847F7 /* FBROfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROfferTableViewCell.h; sourceTree = "<group>"; };
-		65657F831BC2FE00008847F7 /* FBROfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROfferTableViewCell.m; sourceTree = "<group>"; };
+		6566E5AE25E3C06F00641150 /* MainFlowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFlowHandler.h; sourceTree = "<group>"; };
+		6566E5AF25E3C06F00641150 /* MainFlowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFlowHandler.m; sourceTree = "<group>"; };
+		6566E5B225E3C06F00641150 /* FBRResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRResultsViewController.h; sourceTree = "<group>"; };
+		6566E5B325E3C06F00641150 /* FBRResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRResultsViewController.m; sourceTree = "<group>"; };
+		6566E5B525E3C06F00641150 /* FBRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRViewController.h; sourceTree = "<group>"; };
+		6566E5B625E3C06F00641150 /* FBRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRViewController.m; sourceTree = "<group>"; };
+		6566E5B825E3C06F00641150 /* UIViewController+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Creation.m"; sourceTree = "<group>"; };
+		6566E5B925E3C06F00641150 /* UIViewController+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Creation.h"; sourceTree = "<group>"; };
+		6566E5BB25E3C06F00641150 /* FBROfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBROfferTableViewCell.h; sourceTree = "<group>"; };
+		6566E5BC25E3C06F00641150 /* FBROfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBROfferTableViewCell.m; sourceTree = "<group>"; };
+		6566E61925E3C35700641150 /* DCHFyberSDK_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCHFyberSDK_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6566E61B25E3C35700641150 /* DCHFyberSDK_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCHFyberSDK_ExampleTests.m; sourceTree = "<group>"; };
+		6566E61D25E3C35700641150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F5E418659436A455EB6F802 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		9EFF387A814B90DA57D8AA91 /* Pods-DCHFyberSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCHFyberSDK_Tests/Pods-DCHFyberSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDB5DC3E5649B83F8EF45CD3 /* Pods-DCHFyberSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9A34E98028008CA672FA92CE /* Pods-DCHFyberSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCHFyberSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B2D57E776732C4194FD3E83A /* Pods_DCHFyberSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCHFyberSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0087A0C579A32AB3DFB1145 /* DCHFyberSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DCHFyberSDK.podspec; path = ../DCHFyberSDK.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,33 +76,27 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				B9B6AFD7A938A96743AAC448 /* Pods_DCHFyberSDK_Example.framework in Frameworks */,
+				A803B9A55DD444DAF45DB1CA /* Pods_DCHFyberSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AB195388D20070C39A /* Frameworks */ = {
+		6566E61625E3C35700641150 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A44B7000A7CBA47655D0A190 /* Pods_DCHFyberSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C4A5B221C104EDAFF6C844F /* Pods */ = {
+		59D7DD528DDFAE2F9A6A76FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DDB5DC3E5649B83F8EF45CD3 /* Pods-DCHFyberSDK_Example.debug.xcconfig */,
-				54218E66C3C293E40F300644 /* Pods-DCHFyberSDK_Example.release.xcconfig */,
-				9EFF387A814B90DA57D8AA91 /* Pods-DCHFyberSDK_Tests.debug.xcconfig */,
-				097EBC88E10EA99FD12DFFD2 /* Pods-DCHFyberSDK_Tests.release.xcconfig */,
+				5EEAF795F78ADBADF25D2970 /* Pods-DCHFyberSDK_Example.debug.xcconfig */,
+				9A34E98028008CA672FA92CE /* Pods-DCHFyberSDK_Example.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -115,10 +104,10 @@
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for DCHFyberSDK */,
-				6003F5B5195388D20070C39A /* Tests */,
+				6566E61A25E3C35700641150 /* DCHFyberSDK_ExampleTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				3C4A5B221C104EDAFF6C844F /* Pods */,
+				59D7DD528DDFAE2F9A6A76FC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				6003F58A195388D20070C39A /* DCHFyberSDK_Example.app */,
-				6003F5AE195388D20070C39A /* DCHFyberSDK_Tests.xctest */,
+				6566E61925E3C35700641150 /* DCHFyberSDK_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,9 +126,7 @@
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
-				6003F5AF195388D20070C39A /* XCTest.framework */,
-				26E0E9DD154DC920D7036192 /* Pods_DCHFyberSDK_Example.framework */,
-				5E180C0D68585EC0A568713C /* Pods_DCHFyberSDK_Tests.framework */,
+				B2D57E776732C4194FD3E83A /* Pods_DCHFyberSDK_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,16 +134,15 @@
 		6003F593195388D20070C39A /* Example for DCHFyberSDK */ = {
 			isa = PBXGroup;
 			children = (
-				65657F811BC2FDD7008847F7 /* Views */,
+				6566E5B725E3C06F00641150 /* Categories */,
+				6566E5AD25E3C06F00641150 /* FlowHandlers */,
+				6566E5B025E3C06F00641150 /* ViewControllers */,
+				6566E5BA25E3C06F00641150 /* Views */,
 				6003F59C195388D20070C39A /* FBRAppDelegate.h */,
 				6003F59D195388D20070C39A /* FBRAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* FBRViewController.h */,
-				6003F5A6195388D20070C39A /* FBRViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				65657F7E1BC2FBEB008847F7 /* FBRResultsViewController.h */,
-				65657F7F1BC2FBEB008847F7 /* FBRResultsViewController.m */,
 			);
 			name = "Example for DCHFyberSDK";
 			path = DCHFyberSDK;
@@ -173,25 +159,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6003F5B5195388D20070C39A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
-				6003F5B6195388D20070C39A /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		6003F5B6195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,13 +169,67 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		65657F811BC2FDD7008847F7 /* Views */ = {
+		6566E5AD25E3C06F00641150 /* FlowHandlers */ = {
 			isa = PBXGroup;
 			children = (
-				65657F821BC2FE00008847F7 /* FBROfferTableViewCell.h */,
-				65657F831BC2FE00008847F7 /* FBROfferTableViewCell.m */,
+				6566E5AE25E3C06F00641150 /* MainFlowHandler.h */,
+				6566E5AF25E3C06F00641150 /* MainFlowHandler.m */,
+			);
+			path = FlowHandlers;
+			sourceTree = "<group>";
+		};
+		6566E5B025E3C06F00641150 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6566E5B125E3C06F00641150 /* FBRResultsViewController */,
+				6566E5B425E3C06F00641150 /* FBRViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6566E5B125E3C06F00641150 /* FBRResultsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6566E5B225E3C06F00641150 /* FBRResultsViewController.h */,
+				6566E5B325E3C06F00641150 /* FBRResultsViewController.m */,
+			);
+			path = FBRResultsViewController;
+			sourceTree = "<group>";
+		};
+		6566E5B425E3C06F00641150 /* FBRViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6566E5B525E3C06F00641150 /* FBRViewController.h */,
+				6566E5B625E3C06F00641150 /* FBRViewController.m */,
+			);
+			path = FBRViewController;
+			sourceTree = "<group>";
+		};
+		6566E5B725E3C06F00641150 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6566E5B825E3C06F00641150 /* UIViewController+Creation.m */,
+				6566E5B925E3C06F00641150 /* UIViewController+Creation.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		6566E5BA25E3C06F00641150 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6566E5BB25E3C06F00641150 /* FBROfferTableViewCell.h */,
+				6566E5BC25E3C06F00641150 /* FBROfferTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6566E61A25E3C35700641150 /* DCHFyberSDK_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6566E61B25E3C35700641150 /* DCHFyberSDK_ExampleTests.m */,
+				6566E61D25E3C35700641150 /* Info.plist */,
+			);
+			path = DCHFyberSDK_ExampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,12 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DCHFyberSDK_Example" */;
 			buildPhases = (
-				C1BB37B0284339AFB1C566FA /* Check Pods Manifest.lock */,
+				C4EA58FF1087A5566D7A52E0 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				2AE9CAD47299083D2CA1473F /* Embed Pods Frameworks */,
-				EE2C5879844DCA4FC83B9EEF /* Copy Pods Resources */,
+				AF91376196426B3C4C9697BB /* [CP] Embed Pods Frameworks */,
+				7C16F87E388C013FF832DDF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,25 +255,22 @@
 			productReference = 6003F58A195388D20070C39A /* DCHFyberSDK_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* DCHFyberSDK_Tests */ = {
+		6566E61825E3C35700641150 /* DCHFyberSDK_ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DCHFyberSDK_Tests" */;
+			buildConfigurationList = 6566E62225E3C35700641150 /* Build configuration list for PBXNativeTarget "DCHFyberSDK_ExampleTests" */;
 			buildPhases = (
-				EBFB259939685B6053ED7BC0 /* Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-				794DD7EFFC7EA325CE07F62D /* Embed Pods Frameworks */,
-				5CDBCFDA688EE31195000675 /* Copy Pods Resources */,
+				6566E61525E3C35700641150 /* Sources */,
+				6566E61625E3C35700641150 /* Frameworks */,
+				6566E61725E3C35700641150 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+				6566E61F25E3C35700641150 /* PBXTargetDependency */,
 			);
-			name = DCHFyberSDK_Tests;
-			productName = DCHFyberSDKTests;
-			productReference = 6003F5AE195388D20070C39A /* DCHFyberSDK_Tests.xctest */;
+			name = DCHFyberSDK_ExampleTests;
+			productName = DCHFyberSDK_ExampleTests;
+			productReference = 6566E61925E3C35700641150 /* DCHFyberSDK_ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -262,10 +280,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FBR;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Daniel;
 				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
+					6566E61825E3C35700641150 = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -275,6 +295,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -284,7 +305,7 @@
 			projectRoot = "";
 			targets = (
 				6003F589195388D20070C39A /* DCHFyberSDK_Example */,
-				6003F5AD195388D20070C39A /* DCHFyberSDK_Tests */,
+				6566E61825E3C35700641150 /* DCHFyberSDK_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,105 +321,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AC195388D20070C39A /* Resources */ = {
+		6566E61725E3C35700641150 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2AE9CAD47299083D2CA1473F /* Embed Pods Frameworks */ = {
+		7C16F87E388C013FF832DDF6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DCHFyberSDK/DCHFyberSDK.bundle",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DCHFyberSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5CDBCFDA688EE31195000675 /* Copy Pods Resources */ = {
+		AF91376196426B3C4C9697BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example-frameworks.sh",
+				"${PODS_ROOT}/../../Pod/Classes/DCHFyberOffersSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCHFyberOffersSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCHFyberSDK_Tests/Pods-DCHFyberSDK_Tests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		794DD7EFFC7EA325CE07F62D /* Embed Pods Frameworks */ = {
+		C4EA58FF1087A5566D7A52E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DCHFyberSDK_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCHFyberSDK_Tests/Pods-DCHFyberSDK_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1BB37B0284339AFB1C566FA /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EBFB259939685B6053ED7BC0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EE2C5879844DCA4FC83B9EEF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DCHFyberSDK_Example/Pods-DCHFyberSDK_Example-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -408,29 +398,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65657F801BC2FBEB008847F7 /* FBRResultsViewController.m in Sources */,
+				6566E5BE25E3C06F00641150 /* FBRResultsViewController.m in Sources */,
+				6566E5C025E3C06F00641150 /* UIViewController+Creation.m in Sources */,
 				6003F59E195388D20070C39A /* FBRAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* FBRViewController.m in Sources */,
-				65657F841BC2FE00008847F7 /* FBROfferTableViewCell.m in Sources */,
+				6566E5BD25E3C06F00641150 /* MainFlowHandler.m in Sources */,
+				6566E5BF25E3C06F00641150 /* FBRViewController.m in Sources */,
+				6566E5C125E3C06F00641150 /* FBROfferTableViewCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AA195388D20070C39A /* Sources */ = {
+		6566E61525E3C35700641150 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				6566E61C25E3C35700641150 /* DCHFyberSDK_ExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+		6566E61F25E3C35700641150 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* DCHFyberSDK_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+			targetProxy = 6566E61E25E3C35700641150 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -443,14 +435,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5B9195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -458,22 +442,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -486,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,29 +497,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -528,15 +543,16 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDB5DC3E5649B83F8EF45CD3 /* Pods-DCHFyberSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 5EEAF795F78ADBADF25D2970 /* Pods-DCHFyberSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCHFyberSDK/DCHFyberSDK-Prefix.pch";
 				INFOPLIST_FILE = "DCHFyberSDK/DCHFyberSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -544,59 +560,69 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54218E66C3C293E40F300644 /* Pods-DCHFyberSDK_Example.release.xcconfig */;
+			baseConfigurationReference = 9A34E98028008CA672FA92CE /* Pods-DCHFyberSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCHFyberSDK/DCHFyberSDK-Prefix.pch";
 				INFOPLIST_FILE = "DCHFyberSDK/DCHFyberSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		6003F5C3195388D20070C39A /* Debug */ = {
+		6566E62025E3C35700641150 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EFF387A814B90DA57D8AA91 /* Pods-DCHFyberSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DCHFyberSDK_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "dch.DCHFyberSDK-ExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCHFyberSDK_Example.app/DCHFyberSDK_Example";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		6003F5C4195388D20070C39A /* Release */ = {
+		6566E62125E3C35700641150 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 097EBC88E10EA99FD12DFFD2 /* Pods-DCHFyberSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DCHFyberSDK_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "dch.DCHFyberSDK-ExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCHFyberSDK_Example.app/DCHFyberSDK_Example";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -621,11 +647,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DCHFyberSDK_Tests" */ = {
+		6566E62225E3C35700641150 /* Build configuration list for PBXNativeTarget "DCHFyberSDK_ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
+				6566E62025E3C35700641150 /* Debug */,
+				6566E62125E3C35700641150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

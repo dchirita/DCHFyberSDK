@@ -1,0 +1,6 @@
+framework module DCHFyberOffersSDK {
+  umbrella header "DCHFyberOffersSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,6 @@
 {
   "name": "DCHFyberSDK",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "DCHFyberSDK is a wrapper above Fyber API.",
   "description": "It is supposed to provide anything you need to have access to Fyber ADS engine by only adding the specific data such as API key provided by Fyber Team.",
   "homepage": "https://github.com/dchirita/DCHFyberSDK",
@@ -10,21 +10,18 @@
   },
   "source": {
     "git": "https://github.com/dchirita/DCHFyberSDK.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "DCHFyberSDK": [
       "Pod/Assets/*.png"
     ]
   },
-  "dependencies": {
-    "AFNetworking": [
-      "~> 2.6.0"
-    ]
-  }
+  "public_header_files": "Pod/Classes/DCHFyberOffersSDK.framework/Headers/*.h",
+  "source_files": "Pod/Classes/DCHFyberOffersSDK.framework/Headers/*.h",
+  "vendored_frameworks": "Pod/Classes/DCHFyberOffersSDK.framework"
 }

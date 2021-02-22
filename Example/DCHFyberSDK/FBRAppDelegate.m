@@ -8,11 +8,14 @@
 
 #import "FBRAppDelegate.h"
 
-@implementation FBRAppDelegate
+#import "MainFlowHandler.h"
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    return YES;
+@implementation FBRAppDelegate
+@synthesize window = _window;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    return [[MainFlowHandler shared] application:application
+                   didFinishLaunchingWithOptions:launchOptions];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

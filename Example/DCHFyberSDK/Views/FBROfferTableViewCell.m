@@ -7,7 +7,9 @@
 //
 
 #import "FBROfferTableViewCell.h"
-#import "FBROfferItem.h"
+
+#import <DCHFyberOffersSDK/FBROfferItem.h>
+
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface FBROfferTableViewCell()

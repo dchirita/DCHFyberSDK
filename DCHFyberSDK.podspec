@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DCHFyberSDK"
-  s.version          = "0.1.1"
+  s.version          = "1.0.0"
   s.summary          = "DCHFyberSDK is a wrapper above Fyber API." 
   s.description      = "It is supposed to provide anything you need to have access to Fyber ADS engine by only adding the specific data such as API key provided by Fyber Team."
 
@@ -19,15 +19,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/dchirita/DCHFyberSDK.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '12.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'DCHFyberSDK' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking', '~> 2.6.0'
+  s.public_header_files = 'Pod/Classes/DCHFyberOffersSDK.framework/Headers/*.h'
+  s.source_files = "Pod/Classes/DCHFyberOffersSDK.framework/Headers/*.h"
+  s.vendored_frameworks = "Pod/Classes/DCHFyberOffersSDK.framework"
 end
