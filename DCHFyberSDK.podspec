@@ -25,4 +25,11 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Pod/Classes/DCHFyberOffersSDK.framework/Headers/*.h'
   s.source_files = "Pod/Classes/DCHFyberOffersSDK.framework/Headers/*.h"
   s.vendored_frameworks = "Pod/Classes/DCHFyberOffersSDK.framework"
+  
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  
 end
